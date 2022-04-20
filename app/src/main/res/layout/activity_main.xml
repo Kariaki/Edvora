@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="75dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Edvora"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userName"
+                android:layout_centerVertical="true"
+                android:text="Dhruv Singh"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_toStartOf="@id/userProfileImage"
+                android:layout_marginEnd="10dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="35dp"
+                android:id="@+id/userProfileImage"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Rides:"
+            android:layout_alignParentStart="true"
+            android:id="@+id/ridesText"
+            android:textColor="#ABABAB"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            />
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="wrap_content"
+            app:tabSelectedTextColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ridesText"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+
+            app:tabIndicatorFullWidth="true"
+            app:tabMode="scrollable"
+            android:layout_marginStart="10dp"
+            app:tabTextColor="#ABABAB"
+            app:tabIndicatorColor="@color/white"
+            android:id="@+id/rideTabs"
+            android:layout_centerHorizontal="true"
+            app:tabTextAppearance="@style/tabText"
+            >
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:text="Nearest"
+                android:layout_height="wrap_content"
+                />
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upcoming"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Past" />
+        </com.google.android.material.tabs.TabLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@id/rideTabs"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/filter"
+            android:text="@string/filter"
+            android:layout_centerVertical="true"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/white"
+
+            android:drawableStart="@drawable/filter"
+
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+    </HorizontalScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rideList"
+        />
+
+</LinearLayout>

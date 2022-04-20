@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:background="@drawable/filter_modal_background"
+    android:orientation="vertical"
+    android:layout_height="200dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A5A5A5"
+        android:layout_margin="20dp"
+        android:textSize="18sp"
+
+        android:text="Filters"
+        />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_background"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+
+            android:prompt="@string/state"
+            android:id="@+id/stateSpinner"
+
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/spinner_background">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/citySpinner"
+            android:prompt="@string/cities"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+</LinearLayout>

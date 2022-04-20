@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../Android/Sdk/platforms/android-31/data/res/layout/simple_dropdown_item_1line.xml" value="0.11546052631578947" />
+        <entry key="app/src/main/res/drawable/city_state_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/filter.xml" value="0.223" />
+        <entry key="app/src/main/res/drawable/filter_modal_background.xml" value="0.223" />
+        <entry key="app/src/main/res/drawable/ride_card_background.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_filter_modal.xml" value="0.22631578947368422" />
+        <entry key="app/src/main/res/layout/ride_componenet.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/spinner_drop_down.xml" value="0.11546052631578947" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
